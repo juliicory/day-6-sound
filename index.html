@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a onclick="playAudio()" id="sound">
+        <img src="https://i.pinimg.com/736x/17/ef/f5/17eff5d4df16b95d8a30184f57a13ed5.jpg">
+    </a>
+    <script type="text/javascript">
+
+    const audio = ["https://freesound.org/people/Robinhood76/sounds/84746/"];
+
+    function playAudio()
+    {
+        let last = audio.length;
+        let chosen = Math.floor(Math.random() * (last+1));
+        const sound = (audio[chosen]);
+        new Audio(sound).play();
+    }
+    </script>
+</body>
+</html>
