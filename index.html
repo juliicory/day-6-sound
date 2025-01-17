@@ -11,14 +11,14 @@
     </a>
     <script type="text/javascript">
 
-    const audio = ["C:\Users\julic\Desktop\drawing final\final video\sound pieces\horse gallop !!.wav", "C:\Users\julic\Desktop\drawing final\final video\sound pieces\clock tick fast.wav"];
+    const audio = [new Audio("https://freesound.org/people/Robinhood76/sounds/84746/")];
 
     function playAudio()
     {
         let last = audio.length;
         let chosen = Math.floor(Math.random() * (last+1));
-        const sound = (audio[chosen]);
-        new Audio(sound).play();
+        let sound = (audio[chosen]);
+        new Audio(test).play();
     }
     </script>
 </body>
